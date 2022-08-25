@@ -66,6 +66,8 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	tx, err := act.Mint(auth, common.HexToAddress("0x130C66f906e03e371D25e447E1fe7d7331631D5a"), new(big.Int).SetInt64(1000000000000000000))
+	decimal := new(big.Int).SetInt64(1000000000000000000)
+	value := new(big.Int).SetInt64(int64(20000))
+	tx, err := act.Mint(auth, common.HexToAddress("0x130C66f906e03e371D25e447E1fe7d7331631D5a"), new(big.Int).Mul(decimal, value))
 	print("交易哈希为：", tx)
 }
