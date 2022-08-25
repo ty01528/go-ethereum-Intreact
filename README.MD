@@ -4,9 +4,13 @@
 ### 结构说明：
 
     - oceCoin.sol             # 创建了一个名为oceCoin的代币
+
     - call.abi                # Remix在合约部署后生成的abi文件
+
     - interact --|-- callContract.go   # abigen工具生成的原abi文件的go版本
+                 |
                  |-- key&val           # 定义了网络信息与合约信息
+                 |
                  |-- ...               # 合约交互文件
 
 ### 代币部署流程
