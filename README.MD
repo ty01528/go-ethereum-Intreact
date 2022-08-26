@@ -1,9 +1,9 @@
-# 创建代币并使用Geth与代币合约交互
+# 创建代币并使用Geth与合约交互
 
 ----
 ### 结构说明：
 
-    - oceCoin.sol             # 创建了一个名为oceCoin的代币
+    - oceCoin.sol             # 创建了一个名为 oceCoin 的代币
 
     - call.abi                # Remix在合约部署后生成的abi文件
 

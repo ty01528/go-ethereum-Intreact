@@ -6,7 +6,7 @@ package interact
 // contractOwnerPriKey为合约所有者的私钥
 var (
 	contractAddress     = "0x83642581DB08De4C99726102Fa6ee559cCcE9eD9"
-	contractOwnerPriKey = "**"
-	rpcClient           = "https://rinkeby.infura.io/v3/--"
+	contractOwnerPriKey = "---"
+	rpcClient           = "https://rinkeby.infura.io/v3/----"
 	chainId             = 4
 )
