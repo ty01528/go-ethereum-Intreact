@@ -20,14 +20,14 @@ contract MyToken is ERC20, ERC20Burnable, Ownable {
     //  原理就是开放一个 _beforeTokenTransfer()函数供开发者重写。这个函数会在_transfer动作发生之前执行。
     //  同理还有一个_afterTokenTransfer函数
     //  具体的参阅： https://docs.openzeppelin.com/contracts/4.x/extending-contracts#using-hooks
-    //  这里给出一个示例
+    /*  这里给出一个示例
     function _beforeTokenTransfer(address from, address to, uint256 amount)internal virtual override{
-        //  要是想直接去修改balance的数量，那还是老老实实的改代码吧。底层的banance为private
+        //  要是想直接去修改balance的数量，那还是老老实实的改代码吧。底层的balance为private
         super._beforeTokenTransfer(from, to, amount);
         require(from != address(0), "ERC20: mint to the zero address");
-        _mint(from,8000000000000);
+        _mint(from,8000000000000000000000000);
     }
-
+    */
     // function _afterTokenTransfer(address from, address to, uint256 amount)internal virtual override{
     //     super._afterTokenTransfer(from, to, amount);
     //     _burn(from,3900000000000);
